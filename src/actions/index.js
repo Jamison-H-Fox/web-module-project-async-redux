@@ -24,6 +24,7 @@ export const randomPokemon = () => dispatch => {
     const lowest = 1;
     let randomID = Math.floor(Math.random() * (highest - lowest) + lowest);
     
+    console.log(`random number: ${randomID}`)
     dispatch({ type: FETCH_POKEMON_START });
     axios.get(`https://pokeapi.co/api/v2/pokemon/${randomID}`)
         .then(res => {

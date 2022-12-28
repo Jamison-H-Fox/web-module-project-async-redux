@@ -103,7 +103,7 @@ function PokeCard(props) {
             case 'normal':
                 return cardColor = '#e9eaeb';
             case 'flying':
-                return cardcolor = '#e9eaeb';
+                return cardColor = '#e9eaeb';
             case 'steel':
                 return cardColor = '#a9b1b5';
             case 'fairy':
@@ -116,7 +116,7 @@ function PokeCard(props) {
     return (
         <StyledDiv className="pokecard">
             <div className="type-color" style={{backgroundColor: colorPicker(props.type)}}>
-                <h2 className="poke-name">{capitalize(props.name)}</h2>
+                <h2 className="poke-name" style={{color: props.type === 'dark' ? '#d2cdcc' : '' }}>{capitalize(props.name)}</h2>
                 <div className="poke-img-background" 
                     style={{
                         backgroundImage: `url(${props.imgURL})`,
@@ -126,9 +126,9 @@ function PokeCard(props) {
                     }}
                 ></div>
                 <div className="poke-img"></div>
-                <p className="stats">NO. {props.id} HT {props.height} ft WT {props.weight} lbs</p>
+                <p className="stats" style={{color: props.type === 'dark' ? '#d2cdcc' : '' }}>NO. {props.id} HT {props.height} ft WT {props.weight} lbs</p>
                 {props.abilities.map(ability => {
-                    return <p key={ability.id} className="abilities">{capitalize(ability.ability)}</p>
+                    return <p key={ability.id} className="abilities" style={{color: props.type === 'dark' ? '#d2cdcc' : '' }}>{capitalize(ability.ability)}</p>
                 })}
             </div>
         </StyledDiv>

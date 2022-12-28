@@ -9,7 +9,7 @@ const initialState = {
         id: '???',
         height: '???',
         weight: '???',
-        abilities: []
+        abilities: [{ability: '???', key:0}, {ability: '???', key:1}]
     },
     errors: ''
 };
@@ -37,7 +37,8 @@ function reducer(state = initialState, action) {
                     height: initialState.pokemon.height,
                     weight: initialState.pokemon.weight,
                     abilities: initialState.pokemon.abilities
-                }
+                },
+                errors: ''
             }
         case FETCH_POKEMON_SUCCESS:
             return {

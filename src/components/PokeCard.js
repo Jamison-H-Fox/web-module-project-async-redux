@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { connect } from "react-redux";
 
 const StyledDiv = styled.div`
-    width: 45%;
+    width: 33%;
     margin: 2.5%;
-    padding-bottom: 63%;
+    padding-bottom: 46%;
     background-color: #ffe165;
     border-radius: 30px;
     position: relative;

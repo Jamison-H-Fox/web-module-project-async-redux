@@ -2,7 +2,10 @@
   "name": "codegraded-project-react",
   "version": "0.0.1",
   "main": "index.js",
+  "homepage": "http://Jamison-H-Fox.github.io/web-module-project-async-redux",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --open",
     "test": "cross-env NODE_ENV=testing jest --verbose --forceExit"
   },
@@ -36,6 +39,7 @@
     "cors": "2.8.5",
     "css-loader": "^6.5.1",
     "express": "4.17.1",
+    "gh-pages": "^4.0.0",
     "jest-dom": "4.0.0",
     "moment": "2.29.1",
     "mutationobserver-shim": "0.3.7",

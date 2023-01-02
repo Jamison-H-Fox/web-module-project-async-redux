@@ -9,7 +9,7 @@ const initialState = {
         id: '???',
         height: '???',
         weight: '???',
-        abilities: [{ability: '???', key:0}, {ability: '???', key:1}]
+        abilities: [{ability: '???', id:0}, {ability: '???', id:1}]
     },
     errors: ''
 };
